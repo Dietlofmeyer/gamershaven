@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="main.css" />
+		<title>Gamer's Haven - Sign in</title>
+		<script type="module" defer src="login.js"></script>
+	</head>
+	<body class="bg-secondary">
+        <nav class="navbar navbar-expand-lg position-absolute top-0 start-0 z-3  w-100 ">
+			<div class="container-fluid">
+				<a class="navbar-brand" href="#"
+					><h1 class="text-white">Gamer's Haven</h1></a
+				>
+				<button
+					class="navbar-toggler"
+					type="button"
+					data-bs-toggle="collapse"
+					data-bs-target="#navbarSupportedContent"
+					aria-controls="navbarSupportedContent"
+					aria-expanded="false"
+					aria-label="Toggle navigation"
+				>
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<div class="collapse navbar-collapse" id="navbarSupportedContent">
+					<ul class="navbar-nav me-auto mb-2 mb-lg-0">
+						<li class="nav-item">
+							<a class="nav-link active text-white" aria-current="page" href="index.html"
+								>Home</a
+							>
+						</li>
+
+
+					</form>
+				</div>
+			</div>
+		</nav>
+		<section
+			class="position-absolute top-50 start-50 translate-middle z-3 w-25 p-3 rounded"
+			style="background: #e0e0e0"
+		>
+			<div>
+				<div class="input-group mb-3">
+					<span
+						class="input-group-text"
+						id="basic-addon1"
+						style="background: #e0e0e0; border-radius: 12px"
+						>Haven-Tag</span
+					>
+					<input
+						type="text"
+						id="email"
+						class="form-control"
+						placeholder="Username"
+						aria-label="Username"
+						aria-describedby="basic-addon1"
+						style="
+							background: #e0e0e0;
+							border-radius: 12px;
+							box-shadow: inset 3px 3px 8px #bebebe, inset -3px -3px 8px #ffffff;
+							border: none;
+						"
+					/>
+				</div>
+				<div class="input-group mb-3">
+					<input
+						type="password"
+						id="password"
+						class="form-control"
+						placeholder="Password"
+						aria-label="Password"
+						aria-describedby="basic-addon2"
+						style="
+							background: #e0e0e0;
+							border-radius: 12px;
+							box-shadow: inset 3px 3px 8px #bebebe, inset -3px -3px 8px #ffffff;
+							border: none;
+						"
+					/>
+					<span
+						class="input-group-text"
+						id="basic-addon2"
+						style="background: #e0e0e0; border-radius: 12px"
+						>Password</span
+					>
+				</div>
+				<button
+					type="submit"
+					id="submit"
+					class="btn btn-primary w-100"
+					style="
+						background: #e0e0e0;
+						border-radius: 12px;
+						box-shadow: 3px 3px 8px #bebebe, -3px -3px 8px #ffffff;
+						color: #000;
+						border: none;
+					"
+				>
+					Sign in
+				</button>
+				<br />
+				<br />
+				<p>Are you new? <a href="#"> sign up</a></p>
+			</div>
+
+		</section>
+		<div>			
+			<div>			<img
+				src="../Assets/images/Background-Images/Ezio.png"
+				alt=""
+				class="position-absolute bottom-0 start-0"
+			/></div>
+			
+			
+			<img
+			src="../Assets/images/Background-Images/Viking.png"
+			alt=""
+			class="position-absolute bottom-0 end-0"
+		/></div>
+        <script src="firebase.js"></script>
+		<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+	</body>
+</html>

@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="main.css" />
+
+		<title>Booking - Gamer's Haven</title>
+	</head>
+	<body class="bg-secondary">
+		<nav class="navbar navbar-expand-lg navbar-dark bg-transparent">
+			<a class="navbar-brand" href="#">Gamer's Haven</a>
+			<button
+				class="navbar-toggler"
+				type="button"
+				data-toggle="collapse"
+				data-target="#navbarNav"
+				aria-controls="navbarNav"
+				aria-expanded="false"
+				aria-label="Toggle navigation"
+			>
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="navbarNav">
+				<ul class="navbar-nav">
+					<li class="nav-item">
+						<a class="nav-link" href="index.html">Home</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="dashboard.html">Profile</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link active" href="booking.html">Booking</a>
+					</li>
+				</ul>
+			</div>
+		</nav>
+
+		<div class="container mt-5">
+			<form id="bookingForm">
+				<h2 class="text-white">Book a Console</h2>
+				<div class="form-group">
+					<label for="bookingDate" class="text-white">Date</label>
+					<input type="date" class="form-control" id="bookingDate" required />
+				</div>
+				<div class="form-group">
+					<label for="bookingTime" class="text-white">Time</label>
+					<select class="form-control" id="bookingTime" required>
+						<option value="" disabled selected>Select time</option>
+						<option value="10:00">10:00</option>
+						<option value="11:00">11:00</option>
+						<option value="12:00">12:00</option>
+						<option value="13:00">13:00</option>
+						<option value="14:00">14:00</option>
+						<option value="15:00">15:00</option>
+						<option value="16:00">16:00</option>
+						<option value="17:00">17:00</option>
+						<option value="18:00">18:00</option>
+						<option value="19:00">19:00</option>
+						<option value="20:00">20:00</option>
+						<option value="21:00">21:00</option>
+					</select>
+				</div>
+				<div class="form-group">
+					<label for="numberOfPeople" class="text-white"
+						>Number of People</label
+					>
+					<select class="form-control" id="numberOfPeople" required>
+						<option value="" disabled selected>Select number of people</option>
+						<option value="1">1</option>
+						<option value="2">2</option>
+						<option value="3">3</option>
+						<option value="4">4</option>
+						<option value="5">5</option>
+						<option value="6">6</option>
+						<option value="7">7</option>
+						<option value="8">8</option>
+					</select>
+				</div>
+				<div class="form-group">
+					<label for="consoleType" class="text-white">Console</label>
+					<select class="form-control" id="consoleType" required>
+						<option value="" disabled selected>Select console</option>
+						<option value="sega-genesis">Sega Genesis (1988)</option>
+						<option value="snes">
+							Super Nintendo Entertainment System (SNES) (1991)
+						</option>
+						<option value="sega-cd">Sega CD (1992)</option>
+						<option value="sony-playstation">Sony PlayStation (1994)</option>
+						<option value="sega-saturn">Sega Saturn (1995)</option>
+						<option value="nintendo-64">Nintendo 64 (1996)</option>
+						<option value="sega-dreamcast">Sega Dreamcast (1998)</option>
+						<option value="ps2">Sony PlayStation 2 (2000)</option>
+						<option value="nintendo-gamecube">Nintendo GameCube (2001)</option>
+						<option value="microsoft-xbox">Microsoft Xbox (2001)</option>
+						<option value="xbox-360">Xbox 360 (2005)</option>
+						<option value="nintendo-wii">Nintendo Wii (2006)</option>
+						<option value="ps3">Sony PlayStation 3 (2006)</option>
+						<option value="ps4">Sony PlayStation 4 (2013)</option>
+						<option value="xbox-one">Xbox One (2013)</option>
+						<option value="switch-oled">
+							Nintendo Switch OLED Model (2021)
+						</option>
+						<option value="ps5">Sony PlayStation 5 (2020)</option>
+						<option value="xbox-series-x">Xbox Series X (2020)</option>
+					</select>
+				</div>
+				<button type="submit" class="btn bg-primary text-white mt-5 mx-1">
+					Book Now
+				</button>
+				<button type="submit" class="btn bg-primary mt-5 mx-1">
+					<a href="dashboard.html" class="text-white">Done with booking</a>
+				</button>
+			</form>
+		</div>
+		<div>
+			<img
+				src="../Assets/images/Background-Images/multiple_characters.png"
+				alt=""
+				class="position-absolute bottom-0 end-0"
+			/>
+		</div>
+
+		<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+		<script type="module" src="booking.js"></script>
+	</body>
+</html>
