@@ -1,0 +1,10 @@
+{
+  "hosting": {
+    "public": "gamers_haven_pub",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ]
+  }
+}
